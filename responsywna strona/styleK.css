@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    overflow: hidden;
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+}
+
+.content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    font-size: 0.7em;
+}
+
+.content1 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    font-size: 0.7em;
+}
+
+.content .fas,
+.content1 .fas {
+    font-size: 3em;
+}
+
+
+.content p,
+.content1 p {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hamburger {
+    position: absolute;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    right: 0;
+}
+
+
+.hamburger__box {
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger__inner {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .1s .1s ease-in-out;
+
+}
+
+
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    transition: transform .2s .1s ease-in-out;
+
+}
+
+
+.hamburger__inner::before {
+    top: -10px;
+}
+
+
+.hamburger__inner::after {
+    top: 10px;
+}
+
+
+.hamburger--active .hamburger__inner {
+    background-color: transparent;
+}
+
+
+.hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+
+}
+
+
+.hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamburger--active {
+    transform: translate(-120px);
+}
+
+.navigation {
+    width: 120px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: inset 0px 0px 11px -8px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    transform: translateX(120px);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+
+.navigation--active {
+    transform: translateX(0px);
+}
+
+.navigation__list {
+    margin-top: 40px;
+    list-style: none;
+    left: 50%;
+
+}
+
+.navigation__item {
+    margin-bottom: 20px;
+}
+
+.navigation__item a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.hamburger,
+.navigation {
+    transition: transform .3s .1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+    bottom: 0px;
+    box-shadow: inset 0px 0px 11px -8px rgba(0, 0, 0, 1);
+}
+
+
+#footer .stopki1 {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    z-index: 6;
+    left: 0%;
+    color: black;
+    transition: 0.2s;
+
+
+}
+
+
+#footer .stopki2 {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    z-index: 6;
+    left: 25%;
+    color: black;
+}
+
+
+#footer .stopki3 {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    z-index: 6;
+    left: 50%;
+    color: black;
+    transition: 0.2s;
+
+}
+
+
+#footer .stopki4 {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    z-index: 6;
+    left: 75%;
+    color: black;
+    transition: 0.2s;
+
+}
+
+
+#footer .fab {
+    position: absolute;
+    font-size: 300%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 31px 62px -13px rgba(0, 0, 0, 0.68);
+
+}
+
+
+#footer .stopki1:hover {
+    background-color: #3b5998;
+
+}
+
+#footer .stopki2:hover {
+    background: rgb(195, 42, 163);
+    background: linear-gradient(90deg, rgba(195, 42, 163, 1) 20%, rgba(76, 95, 215, 1) 40%, rgba(114, 50, 189, 1) 60%, rgba(244, 111, 48, 1) 80%, rgba(255, 220, 125, 1) 100%);
+    ;
+}
+
+
+#footer .stopki3:hover {
+    background-color: #00acee;
+
+}
+
+
+#footer .stopki4:hover {
+    background-color: red;
+
+}
+
+
+footer a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: black;
+    transition: 0.2s;
+}
+
+
+footer a:hover {
+
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+    .content .fas,
+    .content1 .fas {
+        font-size: 4em;
+    }
+
+    .content p,
+    .content1 p {
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        right: 5%;
+        top: 3%;
+    }
+
+    .hamburger--active {
+        transform: translate(-20%px);
+    }
+
+}
+
+
+
+@media (min-width: 1700px) {
+
+    .content .fas,
+    .content1 .fas {
+        font-size: 6em;
+    }
+
+    .content p,
+    .content1 p {
+        font-size: 4em;
+        font-family: sans-serif;
+    }
+
+    .navigation__item a {
+        font-size: 20px;
+    }
+
+    .navigation__list {
+        left: 10%;
+
+    }
+
+}
